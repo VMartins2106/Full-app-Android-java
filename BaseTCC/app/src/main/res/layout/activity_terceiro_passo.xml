@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TerceiroPasso"
+    android:background="#F4FBFF">
+
+    <ImageView
+        android:id="@+id/imageMenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="btnVoltar"
+        android:src="@drawable/ic_voltarrr" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/terceiro_passo"
+        android:textColor="#234D60"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="230dp"
+        android:text="Você sabe o principal gatilho?"
+        android:textColor="@color/texto_passos"
+        android:textSize="22sp" />
+
+    <RadioGroup
+        android:id="@+id/grpGatilho"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="290dp">
+
+        <RadioButton
+            android:id="@+id/familia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/problemas_familiares"
+            android:textSize="17sp"/>
+
+        <RadioButton
+            android:id="@+id/trabalho_escola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/problemas_no_trabalho_escola"
+            android:textSize="17sp"/>
+
+        <RadioButton
+            android:id="@+id/preocupacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/preocupa_o_com_algum_evento_importante"
+            android:textSize="17sp"/>
+
+        <RadioButton
+            android:id="@+id/relacionamentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/relacionamentos"
+            android:textSize="17sp"/>
+
+        <RadioButton
+            android:id="@+id/pensar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pensar_demais"
+            android:textSize="17sp"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/descrevendo"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="560dp"
+        android:hint="Outros"
+        android:inputType="text"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/btnProximo"
+        style="@style/buttonCrise"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="700dp"
+        android:text="@string/pr_ximo"
+        android:onClick="btnProximo"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4FBFF"
+    tools:context=".CriseRegistrada">
+
+    <LinearLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/barraMenu"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="voltar"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            app:tint="@color/white"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="290dp"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Crise registrada"
+        android:textColor="#234D60"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:gravity="center"
+        android:text="@string/textoCrise"
+        android:textColor="#234D60"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="305dp"
+        android:src="@drawable/crise_registrada" />
+
+    <Button
+        android:id="@+id/relatorio"
+        style="@style/btnCrise"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="660dp"
+        android:onClick="relatorio"
+        android:text="Ver meus relatórios"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="#43A2CB" />
+
+    <Button
+        android:id="@+id/feed"
+        style="@style/buttonEntrar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="720dp"
+        android:onClick="feed"
+        android:text="Voltar ao feed"
+        android:textAllCaps="false"
+        android:textSize="16sp" />
+</RelativeLayout>

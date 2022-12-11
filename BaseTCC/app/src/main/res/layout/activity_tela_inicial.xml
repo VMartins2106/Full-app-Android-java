@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4FBFF"
+    tools:context=".TelaInicial">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/barra_menu"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageMenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_menu"
+                app:tint="@color/white"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="290dp"
+                android:src="@drawable/logo" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/barra_menu"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.904" />
+            -->
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:background="#BDE5F6"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+                <RelativeLayout
+                    android:id="@+id/btnCalendario"
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="52dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/ic_calendario" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="47dp"
+                        android:text="@string/calendar"
+                        android:textColor="#2E6982"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/menuMusica"
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="130dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="52dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/ic_musica" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="47dp"
+                        android:text="@string/musicas"
+                        android:textColor="#2E6982"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/menuNotas"
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="252dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/ic_notas" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="52dp"
+                        android:layout_marginTop="47dp"
+                        android:text="@string/di_ro"
+                        android:textColor="#2E6982"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="690dp"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolBar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="315dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintLeft_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="170dp"
+                        android:background="@drawable/feedum"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.472"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.136" />
+
+                    <View
+                        style="@style/view"
+                        android:layout_width="330dp"
+                        android:layout_height="110dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="50dp" />
+
+                    <TextView
+                        android:id="@+id/dica"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="60dp"
+                        android:text="Mostre como você está se sentindo:"
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="Está tudo bem?"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <View
+                        android:layout_width="290dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="90dp"
+                        android:background="@drawable/feedum" />
+
+                    <View
+                        android:id="@+id/muitoFeliz"
+                        android:onClick="muitoFeliz"
+                        android:layout_width="43dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="38dp"
+                        android:layout_marginTop="97dp"
+                        android:background="@drawable/muitofelizbg"/>
+
+                    <View
+                        android:id="@+id/feliz"
+                        android:onClick="feliz"
+                        android:layout_width="43dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="82dp"
+                        android:layout_marginTop="97dp"
+                        android:background="@drawable/felizbg"/>
+
+                    <View
+                        android:id="@+id/normal"
+                        android:onClick="normal"
+                        android:layout_width="43dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="127dp"
+                        android:layout_marginTop="97dp"
+                        android:background="@drawable/normalbg"/>
+
+                    <View
+                        android:id="@+id/triste"
+                        android:onClick="triste"
+                        android:layout_width="43dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="172dp"
+                        android:layout_marginTop="97dp"
+                        android:background="@drawable/trsitebg"/>
+
+                    <View
+                        android:id="@+id/muitoTriste"
+                        android:onClick="muitoTriste"
+                    android:layout_width="42dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="97dp"
+                    android:background="@drawable/muitotristebg"/>
+
+                    <View
+                        android:id="@+id/raiva"
+                        android:onClick="raiva"
+                        android:layout_width="43dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="265dp"
+                        android:layout_marginTop="97dp"
+                        android:background="@drawable/raivabg"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="180dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintLeft_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="320dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/feedum"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.472"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.136" />
+
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="170dp"
+                        android:background="@drawable/feedum"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.472"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.136" />
+
+                    <View
+                        style="@style/view"
+                        android:layout_width="330dp"
+                        android:layout_height="155dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp" />
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="130dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/relogio"/>
+
+                    <View
+                        android:layout_width="180dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/feedum" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="195dp"
+                        android:layout_marginTop="31dp"
+                        android:text="O descanso é "
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="165dp"
+                        android:layout_marginTop="53dp"
+                        android:text="essencial para o bom"
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="175dp"
+                        android:layout_marginTop="75dp"
+                        android:text="funcionamento da"
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="185dp"
+                        android:layout_marginTop="97dp"
+                        android:text="da nossa mente"
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="213dp"
+                        android:layout_marginTop="119dp"
+                        android:text="e corpo."
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="360dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintLeft_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="170dp"
+                        android:background="@drawable/feedum"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.472"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.136" />
+
+                    <View
+                        style="@style/view"
+                        android:layout_width="330dp"
+                        android:layout_height="110dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="50dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="60dp"
+                        android:text="Conte-nos o que ocorreu:"
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="7dp"
+                        android:text="Aconteceu algo?"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <Button
+                        style="@style/buttonCriseDois"
+                        android:layout_width="290dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="90dp"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:onClick="btnCrise"
+                        android:text="@string/registre_sua_crise"
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="540dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintLeft_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="170dp"
+                        android:background="@drawable/feedum"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.472"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.136" />
+
+                    <View
+                        style="@style/view"
+                        android:layout_width="330dp"
+                        android:layout_height="155dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp" />
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="180dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/imagemfeed"/>
+
+                    <View
+                        android:layout_width="164dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/feedum" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="31dp"
+                        android:text="Não há nada de"
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="53dp"
+                        android:text="errado em se"
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="75dp"
+                        android:text="se sentir inseguro"
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="97dp"
+                        android:text="de vez em"
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="67dp"
+                        android:layout_marginTop="119dp"
+                        android:text="quando."
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="720dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintLeft_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="170dp"
+                        android:background="@drawable/feedum"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.472"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.136" />
+
+                    <View
+                        style="@style/view"
+                        android:layout_width="330dp"
+                        android:layout_height="110dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="50dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="60dp"
+                        android:text="Veja seus relatórios:"
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="7dp"
+                        android:text="O que você registrou?"
+                        android:textColor="@color/white"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <Button
+                        style="@style/buttonCriseDois"
+                        android:layout_width="260dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="90dp"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:onClick="btnRelat"
+                        android:text="Ir para os relatórios"
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        style="@style/buttonCriseDois"
+                        android:layout_width="290dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="90dp"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:onClick="btnRelat"
+                        android:text="Ir para os relatórios"
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="900dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintLeft_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="150dp"
+                        android:background="@drawable/feedum"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.472"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.136" />
+
+                    <ImageView
+                        android:layout_width="350dp"
+                        android:layout_height="170dp"
+                        android:background="@drawable/feedum"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.472"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.136" />
+
+                    <View
+                        style="@style/view"
+                        android:layout_width="330dp"
+                        android:layout_height="155dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp" />
+
+                    <View
+                        android:layout_width="164dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="170dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/feedum" />
+
+                    <ImageView
+                        android:layout_width="160dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/feedimagem"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="185dp"
+                        android:layout_marginTop="31dp"
+                        android:text="Nem todos os dias"
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="175dp"
+                        android:layout_marginTop="53dp"
+                        android:text="serão bons, mas todos"
+                        android:textColor="#2E6982"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="185dp"
+                        android:layout_marginTop="75dp"
+                        android:text="serão importantes"
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="180dp"
+                        android:layout_marginTop="97dp"
+                        android:text="para você seguir seu"
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="220dp"
+                        android:layout_marginTop="119dp"
+                        android:text="caminho."
+                        android:textColor="#2E6982"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.48"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.228" />
+
+                </FrameLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <include
+            layout="@layout/menu"
+            />
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

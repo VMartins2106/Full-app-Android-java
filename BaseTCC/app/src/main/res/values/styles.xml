@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="buttonEntrar">
+        <item name="android:background">@drawable/btnentrar</item>
+        <item name="backgroundTint">#43A2CB</item>
+    </style>
+
+    <style name="buttonCadastrar">
+        <item name="android:background">@drawable/btnentrar</item>
+        <item name="backgroundTint">#43A2CB</item>
+    </style>
+
+    <style name="buttonCadastro">
+        <item name="android:background">@drawable/btnentrar</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+    <style name="textContato">
+        <item name="android:background">@drawable/textcontato</item>
+    </style>
+
+    <style name="view">
+        <item name="android:background">@drawable/view</item>
+    </style>
+
+    <style name="btnmusga">
+        <item name="android:background">@drawable/btnmusga</item>
+        <item name="android:backgroundTint">#3F8BAB</item>
+    </style>
+
+    <style name="btnpasso">
+        <item name="android:background">@drawable/btnintensidade</item>
+        <item name="android:backgroundTint">#32A354</item>
+    </style>
+
+    <style name="buttonCrise">
+        <item name="android:background">@drawable/crisee</item>
+        <item name="backgroundTint">@color/titulo_aced</item>
+    </style>
+
+    <style name="buttonCriseDois">
+        <item name="android:background">@drawable/criseee</item>
+        <item name="backgroundTint">#87CBE8</item>
+    </style>
+
+    <style name="notas">
+        <item name="android:background">@drawable/notas</item>
+    </style>
+
+    <style name="btnAdicionar">
+        <item name="android:background">@drawable/adicionar</item>
+        <item name="backgroundTint">@color/texto_passos</item>
+    </style>
+
+    <style name="btnCrise">
+        <item name="android:background">@drawable/btncrise</item>
+        <item name="backgroundTint">@color/crise</item>
+    </style>
+
+    <style name="viewCrise">
+        <item name="android:background">@drawable/viewcrise</item>
+    </style>
+
+
+    <style name="btnSair">
+        <item name="android:background">@drawable/adicionar</item>
+        <item name="backgroundTint">#43A2CB</item>
+    </style>
+
+    <style name="estiloCrise">
+        <item name="android:background">@drawable/estilocrise</item>
+    </style>
+
+    <style name="fotoMenu">
+        <item name="android:background">@drawable/foto_menu</item>
+    </style>
+
+    <style name="cadastro">
+        <item name="android:background">@drawable/cadastro</item>
+    </style>
+
+    <style name="fotoMenu_dois">
+        <item name="android:background">@drawable/foto_menu_dois</item>
+    </style>
+
+    <style name="informacao_perfil">
+        <item name="android:background">@drawable/informacoes_perfil</item>
+    </style>
+
+    <style name="foto_perfil">
+        <item name="android:background">@drawable/foto_perfil</item>
+    </style>
+
+    <style name="edit_textimg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/edit_text</item>
+        <item name="android:maxLength">25</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+</resources>

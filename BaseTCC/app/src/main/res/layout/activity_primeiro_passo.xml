@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrimeiroPasso"
+    android:background="#F4FBFF">
+
+    <ImageView
+        android:id="@+id/imageMenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="btnVoltar"
+        android:src="@drawable/ic_voltarrr" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/primeiro_passo"
+        android:textColor="#234D60"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/data_comeco"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="235dp"
+        android:hint="___ de _______"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/rearranjo"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="235dp"
+        android:hint="_______"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="190dp"
+        android:text="@string/quando_come_ou_a_crise"
+        android:textColor="#2E6982"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/hora_comeco"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="235dp"
+        android:hint="___:___  ,"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="300dp"
+        android:text="@string/qual_a_intensidade"
+        android:textColor="@color/texto_passos"
+        android:textSize="22sp" />
+
+    <Button
+        android:id="@+id/intensidade_fraca"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="350dp"
+        android:backgroundTint="#32A354"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/intensidade_fraca"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/intensidade_moderada"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="395dp"
+        android:backgroundTint="@color/moderado"
+        android:text="@string/Moderado"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/intensidade_forte"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="440dp"
+        android:backgroundTint="@color/forte"
+        android:text="@string/Forte"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/intensidade_extrema"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="485dp"
+        android:backgroundTint="@color/extremo"
+        android:text="@string/Extremo"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="555dp"
+        android:text="@string/quando_a_crise_terminou"
+        android:textColor="@color/texto_passos"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/hora_termino"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="605dp"
+        android:hint="___:___  ,"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/data_termino"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="605dp"
+        android:hint="___ de _______"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/rearranjoDois"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="605dp"
+        android:hint="_______"
+        android:textSize="20sp" />
+
+    <Button
+        style="@style/buttonCrise"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="700dp"
+        android:onClick="btnProximo"
+        android:text="@string/pr_ximo"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

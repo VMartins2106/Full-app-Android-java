@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "528466819027",
+    "project_id": "base-tcc",
+    "storage_bucket": "base-tcc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528466819027:android:ee950c465131d42b766126",
+        "android_client_info": {
+          "package_name": "etec.com.br.victor.basetcc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528466819027-o3sbges23l0e9purburchuc1r704co4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOlUse_PNywLK2xUSh2FCWNrnkgjhNUEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528466819027-o3sbges23l0e9purburchuc1r704co4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

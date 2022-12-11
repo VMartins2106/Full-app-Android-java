@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuartoPasso"
+    android:background="#F4FBFF">
+
+    <ImageView
+        android:id="@+id/imageMenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="btnVoltar"
+        android:src="@drawable/ic_voltarrr" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/quarto_passo"
+        android:textColor="#234D60"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="220dp"
+        android:text="@string/o_que_voc_sentiu"
+        android:textColor="@color/texto_passos"
+        android:textSize="22sp" />
+
+    <RadioGroup
+        android:id="@+id/grpSentimento"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="280dp">
+
+        <RadioButton
+            android:id="@+id/agitacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/agita_o"
+            android:textSize="17sp"/>
+
+        <RadioButton
+            android:id="@+id/fome_compulsiva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fome_compulsiva"
+            android:textSize="17sp"/>
+
+        <RadioButton
+            android:id="@+id/estresse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/estresse"
+            android:textSize="17sp"/>
+
+        <RadioButton
+            android:id="@+id/falta_de_ar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/falta_de_ar"
+            android:textSize="17sp"/>
+
+        <RadioButton
+            android:id="@+id/vontade_de_chorar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vontade_de_chorar"
+            android:textSize="17sp"/>
+
+        <RadioButton
+            android:id="@+id/coracao_acelerado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cora_o_acelerado"
+            android:textSize="17sp"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/outroSentimento"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="590dp"
+        android:hint="Outros"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnProximo"
+        style="@style/buttonCrise"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="700dp"
+        android:text="@string/pr_ximo"
+        android:onClick="btnProximo"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

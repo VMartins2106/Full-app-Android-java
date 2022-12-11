@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4FBFF"
+    tools:context=".anotacaoAtual">
+
+    <LinearLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/barraMenu"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:contentDescription="@string/app_name"
+            android:onClick="voltar"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="290dp"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/titulo"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="@color/white"
+        android:hint="Titulo puxado"
+        android:maxLength="27"
+        android:textColorHint="#3B95BD"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:editable="false"/>
+
+    <EditText
+        android:id="@+id/anotacao_agora"
+        android:layout_width="350dp"
+        android:layout_height="520dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/white"
+        android:cursorVisible="false"
+        android:gravity="start"
+        android:hint="Anotação puxada"
+        android:singleLine="false"
+        android:textColorHint="#2E6982" />
+
+    <Button
+        android:id="@+id/btnSair"
+        style="@style/btnSair"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="710dp"
+        android:gravity="center"
+        android:onClick="btnSalvar"
+        android:text="Salvar"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SegundoPasso"
+    android:background="#F4FBFF">
+
+    <ImageView
+        android:id="@+id/imageMenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="btnVoltar"
+        android:src="@drawable/ic_voltarrr" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/segundo_passo"
+        android:textColor="#234D60"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="190dp"
+        android:text="@string/onde_voc_est_estava"
+        android:textColor="@color/texto_passos"
+        android:textSize="22sp" />
+
+    <RadioGroup
+        android:id="@+id/grpLugar"
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="240dp">
+
+        <RadioButton
+            android:id="@+id/casa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sua_casa"/>
+
+        <RadioButton
+            android:id="@+id/trabalho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/trabalho"/>
+
+        <RadioButton
+            android:id="@+id/escola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/escola"/>
+
+        <RadioButton
+            android:id="@+id/festa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/festa"/>
+
+        <RadioButton
+            android:id="@+id/outra_pessoa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cada_de_outra_pessoa"/>
+
+        <RadioButton
+            android:id="@+id/outro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/outro"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="550dp"
+        android:text="@string/voc_tomou_algum_rem_dio"
+        android:textColor="@color/texto_passos"
+        android:textSize="22sp" />
+
+    <RadioGroup
+        android:id="@+id/grpRemedio"
+        android:layout_width="301dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="600dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/com_remedio"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sim" />
+
+        <RadioButton
+            android:id="@+id/sem_remedio"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/n_o" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnProximo"
+        style="@style/buttonCrise"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="700dp"
+        android:text="@string/pr_ximo"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/calendar"
+        android:icon="@drawable/ic_calendario"
+        android:id="@+id/calendario"
+        />
+    <item android:title="@string/sons"
+        android:icon="@drawable/ic_musica"
+        android:id="@+id/sons"
+        />
+    <item android:title="@string/notas"
+        android:icon="@drawable/ic_notas"
+        android:id="@+id/notas"
+        />
+</menu>
